@@ -2070,6 +2070,9 @@ code .flickity { text-decoration: underline; }
     display: none;
   }
 
+  .flickity-viewport{
+    width: 100vw;
+  }
 }
 
 @media screen and ( min-width: 500px ) {

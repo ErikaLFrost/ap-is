@@ -41,6 +41,7 @@ html, body{
 #myLinks{
     text-align: center;
     margin-top: 4vh;
+    display: inline-flex;
 }
 
 .topnav{
@@ -275,17 +276,20 @@ button {
         position: absolute;
     }
 
+
     /* Gömmer länkarna i hamburgaren */
     .topnav #myLinks{
         display: none;
-        margin: 29px 0 0 0;
+        margin: 13vh 0 0 0;
+        position: absolute;
     }
 
     /* Styling för meny-länkarnas boxar när deras dipslay ändras från one till block via JS-koden */
     .topnav #myLinks #menulink{
         min-width: 14vw;
-        padding: 20px;
+        padding: 6px;
         text-align: center;
+        
     }
 
     .topnav #myLinks > div > h3{
@@ -300,7 +304,7 @@ button {
         background-color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 3vw;
         display: block;
     }
 
@@ -312,4 +316,13 @@ button {
         top: 0;
         border-radius: 50%;
     }
+
+    #snowboard-div{
+        margin-top: 15vh;
     }
+
+    .gallery-cell{
+        width: 20%;
+      }
+
+}
