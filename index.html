@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snowboarding</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    </head>
+<body>
+    <header class="header">
+            
+        <img id="logo" src="./images/logo.png" alt="">
+            <!-- Hamburgemeny -->
+            <nav class="topnav">
+               
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <!-- Undermeny -->
+                    <a id="menulink" href="#">SHOP</a>
+                    <a id="menulink" href="#">TEAM</a>
+                    <a id="menulink" href="#">EVENTS</a>
+                    <a id="menulink" href="#">EXPERIENCE</a>
+                    <a id="menulink" href="#">COMPANY</a>
+                    <a id="menulink" href="./contact.html">CONTACT</a>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <script src="hamburger.js"></script>
+            </a>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <div id="snowboard-div">
+                <h2>SNOWBOARDS</h2>
+                <p id="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores enim</p>
+
+                <div class="gallery js-flickity">
+                        <div class="gallery-cell"><img src="./images/board 1.png" alt=""></div>
+                        <div class="gallery-cell"><img src="./images/board 2.png" alt=""></div>
+                        <div class="gallery-cell"><img src="./images/board 3.png" alt=""></div>
+                        <div class="gallery-cell"><img src="./images/board 4.png" alt=""></div>
+                        <div class="gallery-cell"><img src="./images/board 5.png" alt=""></div>
+
+                </div>
+
+                <span id="snowboard-series">SNOWBOARD EXTREME SERIES</span>
+            </div>
+
+        </div>
+    </main>
+   
+    <script src="./flickity-docs.min.js"></script>
+    <script src="./hamburger.js"></script>
+</body>
+</html>

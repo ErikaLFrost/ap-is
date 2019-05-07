@@ -1,0 +1,315 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+      "header"
+      "main"
+  }
+
+/* Header */
+.header {
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 13vh;
+    background-position: center;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+.header > img{
+    height: 12vh;
+    margin-top: 2vh;
+}
+
+/* Styling för meny-länkarna och hamburgarens font */
+#myLinks{
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.topnav{
+    display: inline-flex;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1vw;
+    display: table-cell;
+}
+
+.icon{
+    display: none;
+}
+
+/* Grundstruktur för main-segment */
+main{
+    grid-area: main;
+}
+
+.flex-container{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 4px;
+    scroll-snap-type: y mandatory;
+}
+
+/* Styling för Startsida */
+
+#snowboard-div{
+    text-align: center;
+}
+
+#lorem{
+    margin-bottom: 10vh;
+}
+
+#snowboard-div > h2{
+    font-weight: 800;
+    font-size: 4vw;
+    margin-bottom: 2px;
+}
+
+#snowboard-series{
+    font-weight: 600;
+    padding-bottom: 7vh;
+}
+
+/* Karusellen */
+
+.gallery {
+  background: white;
+    width: 90vw;
+    text-align: center;
+}
+
+.gallery-cell {
+  width: 15vw;
+  height: 60vh;
+  margin: 0 5vw 0 5vw;
+  counter-increment: gallery-cell;
+  opacity: 0.2;
+}
+
+.gallery-cell.is-selected {
+  opacity: 1;
+  text-align: center;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  content: icon;
+  font-size: 80px;
+  color: white;
+}
+
+.gallery .gallery-cell > img{
+    height: 75%;
+}
+
+/* Styling för Kontakt-sidan */
+
+.fbox-contact-img{
+    flex: 50%;
+    width: 50%;
+    padding: 50px 4px 10px;
+    text-align: center;
+}
+
+.fbox-contact{
+    flex: 50%;
+    width: 50%;
+    padding: 40px 4px 10px;
+    text-align: left;
+}
+
+.fbox-contact > h2{
+    font-size: 50px;
+    margin: 0;
+}
+
+.fbox-contact > form{
+    font-size: 20px;
+    display: inline-grid;
+}
+
+/* Styling för submit-knapp på Kontakt-sidan */
+
+button {
+    overflow: visible;
+    border: 0;
+    padding: 0;
+    margin: 1.8rem;
+}
+
+  .btn.striped-shadow span {
+    display: block;
+    position: relative;
+    z-index: 2;
+    border: 5px solid;
+  }
+
+  .btn.striped-shadow.dark span {
+    border-color: #393939;
+    background: #ffffff;
+    color: #393939;
+  }
+  
+  .btn {
+    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+    height: 80px;
+    line-height: 65px;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 1.35rem;
+    transition: opacity .3s, z-index .3s step-end, -webkit-transform .3s;
+    transition: opacity .3s, z-index .3s step-end, transform .3s;
+    transition: opacity .3s,
+      z-index .3s step-end,
+      transform .3s,
+      -webkit-transform .3s;
+    z-index: 1;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .btn {
+    width: 155px;
+    height: 48px;
+    line-height: 38px;
+  }
+
+  button.btn.striped-shadow.dark:after, button.btn.striped-shadow.dark:before {
+    background-image: linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 5px,
+      #393939 5px,
+      #393939 10px,
+      transparent 10px
+    );
+  }
+  
+  button.btn.striped-shadow:hover:before {
+    max-height: calc(100% - 10px);
+  }
+  
+  button.btn.striped-shadow:after {
+    width: calc(100% - 4px);
+    height: 8px;
+    left: -10px;
+    bottom: -9px;
+    background-size: 15px 8px;
+    background-repeat: repeat-x;
+  }
+  
+  button.btn.striped-shadow:after, button.btn.striped-shadow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    transition: max-height .3s, width .3s, -webkit-transform .3s;
+    transition: transform .3s, max-height .3s, width .3s;
+    transition: transform .3s, max-height .3s, width .3s, -webkit-transform .3s;
+  }
+  
+  .btn.striped-shadow:hover {
+    -webkit-transform: translate(-12px, 12px);
+    -ms-transform: translate(-12px, 12px);
+    transform: translate(-12px, 12px);
+    z-index: 3;
+  }
+  
+  button.btn.striped-shadow:hover:after, button.btn.striped-shadow:hover:before {
+    -webkit-transform: translate(12px, -12px);
+    -ms-transform: translate(12px, -12px);
+    transform: translate(12px, -12px);
+  }
+  button.btn.striped-shadow:before {
+    width: 8px;
+    max-height: calc(100% - 5px);
+    height: 100%;
+    left: -12px;
+    bottom: -5px;
+    background-size: 8px 15px;
+    background-repeat: repeat-y;
+    background-position: 0 100%;
+  }
+
+/* Brytpunkt smartphone L */
+
+@media (max-width: 425px){
+
+    .icon{
+        display: inline-flex;
+        color: white;
+        margin-top: 4vh;
+    }    
+
+    /* Kod för hamburgermeny */
+    .topnav {
+        background-color: black;
+        position: absolute;
+    }
+
+    /* Gömmer länkarna i hamburgaren */
+    .topnav #myLinks{
+        display: none;
+        margin: 29px 0 0 0;
+    }
+
+    /* Styling för meny-länkarnas boxar när deras dipslay ändras från one till block via JS-koden */
+    .topnav #myLinks #menulink{
+        min-width: 14vw;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .topnav #myLinks > div > h3{
+        background-color: white;
+        margin: 2px;
+        padding-left: 1vw;
+    }
+
+    /* Styling för meny-länkarna och hamburgarens font */
+    .topnav a {
+        color: black;
+        background-color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+    }
+
+    /* Styling för hamburge-ikonens box */
+    .topnav a.icon{
+        background-attachment: white;
+        display: block;
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+    }
+    }
