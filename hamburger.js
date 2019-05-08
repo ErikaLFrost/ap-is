@@ -1,8 +1,10 @@
 function openHamburgerFunction() {
-    let x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "inline-flex";
+    let myLink = document.getElementById("myLinks");
+    if (myLink.style.display === "block") {
+      myLink.style.display = "none";
+    } else if(myLink.style.display === "inline-flex") {
+      myLink.style.display = "none";
+      } else{
+      myLink.style.display = "inline-flex";
     }
   }
