@@ -24,24 +24,23 @@ html, body{
     height: 13vh;
 }
 
-
 #logo{
     height: 12vh;
     margin-top: 1.5vh;
 }
 
-/* Styling för meny-länkarna och hamburgarens font */
+/* Styling för menyn */
+.topnav{
+    display: inline-flex;
+}
+
 #myLinks{
     text-align: center;
     display: inline-flex;
     align-self: center;
 }
 
-.topnav{
-    display: inline-flex;
-}
-
-.topnav a {
+#menulink{
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -90,7 +89,8 @@ html, body{
   }
   
 
-/* Grundstruktur för main-segment */
+/* ----- Main ----- */
+
 main{
     grid-area: main;
 }
@@ -142,7 +142,7 @@ main{
   text-align: center;
 }
 
-/* cell number */
+/* cell-nummer */
 .gallery-cell:before {
   display: block;
   text-align: center;
@@ -156,101 +156,59 @@ main{
     height: 75%;
 }
 
+
 /* Styling för Kontakt-sidan */
 
-.fbox-contact-img{
-    flex: 50%;
-    width: 50%;
-    padding: 50px 4px 10px;
+.contact-box{
+    align-self: center;
     text-align: center;
-}
-
-.fbox-contact{
-    flex: 50%;
-    width: 50%;
-    padding: 40px 4px 10px;
-    text-align: left;
-}
-
-.fbox-contact > h2{
-    font-size: 50px;
-    margin: 0;
-}
-
-.fbox-contact > form{
-    font-size: 20px;
-    display: inline-grid;
+    margin-top: 30vh;
 }
 
 
 /* Brytpunkt smartphone L */
 
 @media (max-width: 425px){
-
+    /* Hamburger-ikonen */
     .icon{
         display: inline-flex;
-        color: white;
+        color: white !important;
         align-self: center;
         font-size: 4vh;
-    }    
+        text-decoration: none;
+    }  
 
-    /* Kod för hamburgermeny */
     .topnav {
-        background-color: black;
         position: absolute;
     }
 
-
     /* Gömmer länkarna i hamburgaren */
-    .topnav #myLinks{
+    #myLinks{
         display: none;
         margin: 16vh 0 0 0;
         position: absolute;
     }
 
-    /* Styling för meny-länkarnas boxar när deras dipslay ändras från one till block via JS-koden */
-    .topnav #myLinks #menulink{
+    /* Styling för meny-länkarna när de displayas från hamburgaren */
+    #menulink{
         min-width: 14vw;
-        padding: 6px;
-        text-align: center;
-        
-    }
-
-    .topnav #myLinks > div > h3{
-        background-color: white;
-        margin: 2px;
-        padding-left: 1vw;
-    }
-
-    /* Styling för meny-länkarna och hamburgarens font */
-    .topnav a {
+        text-align: center;   
         color: black;
-        background-color: white;
-        padding: 14px 16px;
+        padding: 3vw 4vw;
         text-decoration: none;
-        font-size: 2.5vw;
-        display: block;
-    }
-
-    /* Styling för hamburge-ikonens box */
-    .topnav a.icon{
-        background-attachment: white;
-        display: block;
-        position: absolute;
-        top: 0;
-        border-radius: 50%;
+        font-size: 2vw;
     }
 
     /* Styling för sökfältet */
 
     #search-form{
-    width: 40vw;
-    margin-left: auto;
-    margin-right: 10vw;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: 10vw;
     }
 
     #snowboard-div{
-        margin-top: 15vh;
+        margin-top: 8vh;
     }
 
     .gallery-cell{
