@@ -20,22 +20,23 @@
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
                     <!-- Undermeny -->
-                    <div id="myLinks-firstSection">
                         <a id="menulink" href="#">SHOP</a>
                         <a id="menulink" href="#">TEAM</a>
                         <a id="menulink" href="#">EVENTS</a>
-                    </div>
-                    <div id="myLinks-firstSection">
                         <a id="menulink" href="#">EXPERIENCE</a>
                         <a id="menulink" href="#">COMPANY</a>
                         <a id="menulink" href="./contact.html">CONTACT</a>
-                    </div>
                 </div>
             </nav>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="openHamburgerFunction()">
                 <i class="fa fa-bars"></i>
                 <script src="hamburger.js"></script>
             </a>
+            <form id="search-form">
+                <input type="text" placeholder="SEARCH" name="search" id="search">
+                <button type="submit" onclick="showResult(document.getElementById('search').value)"><i class="fa fa-search"></i></button>
+            </form>
+            
     </header>
 
     <main>
@@ -61,5 +62,6 @@
    
     <script src="./flickity-docs.min.js"></script>
     <script src="./hamburger.js"></script>
+    <script src="./search_countries.js"></script>
 </body>
 </html>

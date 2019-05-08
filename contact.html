@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - Blanc Noir Film Festival</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Snowboarding</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="carousel.css">
+    </head>
 <body>
-    <header class="hero">
+    <header class="header">
             
-            <div class="container">
+        <img id="logo" src="./images/logo.png" alt="">
             <!-- Hamburgemeny -->
-            <div class="topnav">
-                
+            <nav class="topnav">
+               
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
                     <!-- Undermeny -->
-                    <a id="menulink" href="./index.html">Hem</a>
-                    <a id="menulink" href="./program.html">Program</a>
-                    <a id="menulink" href="./contact.html">Kontakt</a>
-                    <a id="menulink" href="./about.html">Om oss</a>
-                    <div><h3>Filmer</h3>
-                        <a  id="menulink" href="./mildred.html">Mildred Pierce</a>
-                        <a  id="menulink" href="./killers.html">The Killers</a>
-                        <a  id="menulink" href="./detour.html">Detour</a>
-                        <a  id="menulink" href="./notorious.html">Notorious</a>
-                        <a  id="menulink" href="./maltese_falcon.html">The Maltese Falcon</a>
-                        <a  id="menulink" href="./shadow_of_a_doubt.html">Shadow of a Doubt</a>
-
-                    </div>
+                        <a id="menulink" href="#">SHOP</a>
+                        <a id="menulink" href="#">TEAM</a>
+                        <a id="menulink" href="#">EVENTS</a>
+                        <a id="menulink" href="#">EXPERIENCE</a>
+                        <a id="menulink" href="#">COMPANY</a>
+                        <a id="menulink" href="./contact.html">CONTACT</a>
                 </div>
-            <!-- JS för att få fram undermenyn när användaren trycker på hamburgaren -->
+            </nav>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
-                <script src="navbar.js"></script>
+                <script src="hamburger.js"></script>
             </a>
-        </div>
+            <form id="search-form">
+                <input type="text" placeholder="SEARCH" name="search" id="search">
+                <button type="submit" onclick="showResult(document.getElementById('search').value)"><i class="fa fa-search"></i></button>
+            </form>
+            
     </header>
     <main>
         <div class="flex-container">
@@ -46,30 +45,12 @@
                     <img src="./images/contact.gif" alt="">
                 </div>
             
-            <!-- Kontakt-formulär -->
-                <div class="fbox-contact">
+            <div class="flex-container">
                     <h2>Kontakta oss!</h2>
-                    <form action="/action_page.php" method="post" enctype="text/plain"> <br>
-                        Namn:
-                        <input type="text" name="name" placeholder="Ditt namn..."> <br>
-                        Mailadress:
-                        <input type="text" name="mail" placeholder="Din mejladress..."> <br>
-                        Meddelande: <br>
-                        <textarea name="comment" cols="60" rows="12" placeholder="Skriv ditt meddelande här..."></textarea>
-                        <button class="btn striped-shadow dark" type="submit"><span>Skicka</span></button>
-                    </form>
-                </div>
+                    
+                    
+            </div>
         </div>
     </main>
-    <!-- Footer -->
-    <footer>
-            <hr>
-            <p id="hola">Följ oss i sociala medier för senaste nytt!</p>
-            <a href="http://www.twitter.com"><img src="./images/twitter.svg" alt="twitter"></a>
-            <a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a>
-            <a href="http://www.instagram.com"><img src="./images/instagram.svg" alt="instagram"></a>
-            <p>&copy; 2019 Blanc Noir Film Festival</p>
-            <hr>
-        </footer>
 </body>
 </html>
