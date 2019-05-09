@@ -156,6 +156,26 @@ main{
     height: 75%;
 }
 
+/* Styling av karusell-knapparna */
+
+/* Stylat bort cirkel */
+.flickity-button {
+  background: transparent !important;
+}
+
+.flickity-prev-next-button {
+  width: 20vw !important;
+  height: 20vw !important;
+}
+
+.flickity-button-icon {
+  fill: #838181 !important;
+}
+
+.flickity-button:disabled {
+  display: none !important;
+}
+
 
 /* Styling för Kontakt-sidan */
 
