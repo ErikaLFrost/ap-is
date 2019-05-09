@@ -64,20 +64,20 @@ html, body{
     margin-right: 2vw;
 }
 
-#search-form input[type=text] {
+#search-form input[type=text]{
     padding: 10px;
     font-size: 1vw;
     border: 1px solid #4e4e4e;
     width: 80%;
     background: #4e4e4e;
     color: white;
-  }
+}
 
-  ::placeholder{
-      color: white;
-  }
+::placeholder{
+    color: white;
+}
   
-  #search-form button {
+#search-form button{
     width: 20%;
     padding: 10px;
     background: #4e4e4e;
@@ -86,7 +86,7 @@ html, body{
     border: 1px solid #4e4e4e;
     border-left: none;
     cursor: pointer;
-  }
+}
   
 
 /* ----- Main ----- */
@@ -123,33 +123,33 @@ main{
 
 /* Karusellen */
 
-.gallery {
-  background: white;
+.gallery{
+    background: white;
     width: 90vw;
     text-align: center;
 }
 
-.gallery-cell {
-  width: 15vw;
-  height: 60vh;
-  margin: 0 5vw 0 5vw;
-  counter-increment: gallery-cell;
-  opacity: 0.2;
+.gallery-cell{
+    width: 15vw;
+    height: 60vh;
+    margin: 0 5vw 0 5vw;
+    counter-increment: gallery-cell;
+    opacity: 0.2;
 }
 
-.gallery-cell.is-selected {
-  opacity: 1;
-  text-align: center;
+.gallery-cell.is-selected{
+    opacity: 1;
+    text-align: center;
 }
 
 /* cell-nummer */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  line-height: 200px;
-  content: icon;
-  font-size: 80px;
-  color: white;
+.gallery-cell:before{
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    content: icon;
+    font-size: 80px;
+    color: white;
 }
 
 .gallery .gallery-cell > img{
@@ -213,6 +213,6 @@ main{
 
     .gallery-cell{
         width: 20%;
-      }
+    }
 
 }

@@ -12,12 +12,9 @@
     </head>
 <body>
     <header class="header">
-            
         <a href="index.html"><img id="logo" src="./images/logo.png" alt=""></a>
-            <!-- Hamburgemeny -->
             <nav class="topnav">
                
-                <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
                     <!-- Undermeny -->
                         <a id="menulink" href="#">SHOP</a>
@@ -28,10 +25,11 @@
                         <a id="menulink" href="./contact.html">CONTACT</a>
                 </div>
             </nav>
+            <!-- Hamburgemeny -->
             <a href="javascript:void(0);" class="icon" onclick="openHamburgerFunction()">
                 <i class="fa fa-bars"></i>
-                <script src="hamburger.js"></script>
             </a>
+            <!-- Sökfält -->
             <form id="search-form">
                 <input type="text" placeholder="SEARCH" name="search" id="search">
                 <button type="submit" onclick="showResult(document.getElementById('search').value)"><i class="fa fa-search"></i></button>
@@ -60,8 +58,8 @@
         </div>
     </main>
    
-    <script src="./flickity-docs.min.js"></script>
     <script src="./hamburger.js"></script>
     <script src="./search_countries.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
